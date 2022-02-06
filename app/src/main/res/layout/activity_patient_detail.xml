@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".fragments_home_screen.NotificationFragment">
+
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/tv_request_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@+id/ConstraintLayout1_1"
+                    android:layout_marginStart="@dimen/fragment_notification_tv_request_details_marginStart"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/request_details"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fragment_notification_tv_request_details_textSize"
+                    app:layout_constraintStart_toStartOf="parent"
+                  />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_user_name_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/name"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_user_name_textSize"
+                    app:layout_constraintStart_toStartOf="@+id/tv_request_details"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_request_details" />
+
+                <TextView
+                    android:id="@+id/tv_name_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_name_output_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_name_output_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+
+                <TextView
+                    android:id="@+id/tv_desease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_desease_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/desease"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_desease_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_output" />
+
+                <TextView
+                    android:id="@+id/tv_desease_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_desease_output_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_desease_output_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_desease" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_location_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/location"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_location_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_desease_output" />
+
+                <TextView
+                    android:id="@+id/tv_location_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_location_output_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_location_output_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_location" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_description_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/description"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_description_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_location_output" />
+
+                <TextView
+                    android:id="@+id/tv_description_output"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_description_output_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_notification_tv_description_output_marginEnd"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:lineSpacingExtra="@dimen/fragment_notification_tv_description_output_lineSpacingExtra"
+                    android:singleLine="false"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_description_output_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+                <TextView
+                    android:id="@+id/tv_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_doctor_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/doctor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fragment_notification_tv_doctor_textSize"
+                    app:layout_constraintStart_toStartOf="@+id/tv_request_details"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description_output" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_doctor_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_cv_doctor_card_marginTop"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp"
+                    app:cardMaxElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_description_output"
+                    app:layout_constraintStart_toStartOf="@id/tv_description_output"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_doctor">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/civ_avatar"
+                            android:layout_width="@dimen/fragment_notification_civ_avatar_width"
+                            android:layout_height="@dimen/fragment_notification_civ_avatar_height"
+                            android:layout_marginStart="@dimen/fragment_notification_civ_avatar_marginStart"
+                            android:layout_marginTop="@dimen/fragment_notification_civ_avatar_marginTop"
+                            android:layout_marginBottom="@dimen/fragment_notification_civ_avatar_marginBottom"
+                            android:src="@drawable/avatar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_tv_name_marginStart"
+                            android:layout_marginTop="@dimen/fragment_notification_tv_name_marginTop"
+                            android:fontFamily="@font/proximanova_semibold"
+                            android:letterSpacing="0.05"
+                            android:textColor="@color/colorInputFormName"
+                            android:textSize="@dimen/fragment_notification_tv_name_textSize"
+                            app:layout_constraintStart_toEndOf="@id/civ_avatar"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_specialty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fragment_notification_tv_specialty_marginTop"
+                            android:fontFamily="@font/proximanova_regular_italic"
+                            android:letterSpacing="0.05"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/fragment_notification_tv_specialty_textSize"
+                            app:layout_constraintStart_toStartOf="@id/tv_name"
+                            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                        <ImageView
+                            android:id="@+id/iv_star0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fragment_notification_iv_star0_marginTop"
+                            android:contentDescription="@string/icon_star"
+                            android:src="@drawable/ic_star"
+                            app:layout_constraintStart_toStartOf="@id/tv_specialty"
+                            app:layout_constraintTop_toBottomOf="@id/tv_specialty" />
+
+                        <ImageView
+                            android:id="@+id/iv_star1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star1_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            android:src="@drawable/ic_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star0"
+                            app:layout_constraintTop_toTopOf="@id/iv_star0" />
+
+                        <ImageView
+                            android:id="@+id/iv_star2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star2_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            android:src="@drawable/ic_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star1"
+                            app:layout_constraintTop_toTopOf="@id/iv_star1" />
+
+                        <ImageView
+                            android:id="@+id/iv_star3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star3_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            android:src="@drawable/ic_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star2"
+                            app:layout_constraintTop_toTopOf="@id/iv_star2" />
+
+                        <ImageView
+                            android:id="@+id/iv_star4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star4_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            android:src="@drawable/ic_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star3"
+                            app:layout_constraintTop_toTopOf="@id/iv_star3" />
+
+                        <TextView
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_tv_rating_marginStart"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:letterSpacing="0.05"
+                            android:textColor="@color/colorInputFormHint"
+                            android:textSize="@dimen/fragment_notification_tv_rating_textSize"
+                            app:layout_constraintStart_toEndOf="@id/iv_star4"
+                            app:layout_constraintTop_toTopOf="@id/iv_star4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_notification_btn_confirm_height"
+                    android:layout_marginTop="@dimen/fragment_notification_btn_confirm_marginTop"
+                    android:background="@drawable/btn_rounded_green_borderless"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:text="@string/confirm"
+                    android:textAllCaps="false"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_notification_btn_confirm_textSize"
+                    app:layout_constraintLeft_toLeftOf="@id/cv_doctor_card"
+                    app:layout_constraintRight_toRightOf="@id/cv_doctor_card"
+                    app:layout_constraintTop_toBottomOf="@id/cv_doctor_card" />
+
+                <Button
+                    android:id="@+id/btn_cancel_request"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_notification_btn_cancel_request_height"
+                    android:layout_marginTop="@dimen/fragment_notification_btn_cancel_request_marginTop"
+                    android:layout_marginBottom="@dimen/fragment_notification_btn_cancel_request_marginBottom"
+                    android:background="@drawable/btn_rounded_not_filled_gray"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:text="@string/cancel_request"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorInputFormHint"
+                    android:textSize="@dimen/fragment_notification_btn_cancel_request_textSize"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/btn_confirm"
+                    app:layout_constraintRight_toRightOf="@id/btn_confirm"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_confirm" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+</LinearLayout>
